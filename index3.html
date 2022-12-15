@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-resize</title>
+</head>
+
+<body>
+    <!-- <input id="img-input" type="file" accept="image/*" /> -->
+    <input id="imageFile" name="imageFile" type="file" class="imageFile" accept="image/*" multiple />
+    <input type="number" min="1" value="" name="height" id="myHeight" onchange="heightFnc(this)">
+    <input type="number" min="1" value="" name="width" id="myWidth" onchange="widthFnc(this)">
+    <input type="button" value="Not By Aspect ratio" onclick="notByRatio()" />
+    <input type="button" value="preview" onclick="preview()" />
+    <input type="button" value="Resize Image" onclick="ResizeImage()" />
+    <br>
+    <img src="" id="preview">
+    <img src="" id="output">
+    <div id="root"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/script3.js"></script>
+</body>
+
+</html>
